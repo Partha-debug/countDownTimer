@@ -27,7 +27,7 @@ class Timer {
         this.onStart();
       }
       this.tick();
-      this.interval = setInterval(() => this.tick(), 50); // Using an arrow function here as this methord is getting called by an setInter val so 'this' will be set to the window object if we don't use an arrow function
+      this.interval = setInterval(() => this.tick(), 50);
     }
   
     pause() {
