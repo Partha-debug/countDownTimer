@@ -17,9 +17,8 @@ durationInp.addEventListener('change', function() {
   resetTimer()
 })
 
-
 const timer = new Timer(durationInp, playPauseBtn, {
-  // functions can be defined inside an object without the function parameter
+
   onStart() {
     circle.setAttribute('stroke', "darkred")
     tickOffset = 282.7 / (timeGiven * 20)
@@ -40,5 +39,3 @@ const timer = new Timer(durationInp, playPauseBtn, {
 });
 
 
-// r = 90
-// p = 564.5
