@@ -1,0 +1,62 @@
+svg {
+    transform: rotate(-90deg);
+}
+
+svg circle {
+    transition: all 0.1s;
+}
+
+.timer {
+    position: relative;
+    display: inline-block;
+}
+
+* {
+    font: inherit;
+}
+
+body {
+    margin: 6rem;
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+.timer input {
+    display: block;
+    border: none;
+    width: 70%;
+    font-size: 700%;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.timer i {
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.timer i:focus {
+    outline: none;
+}
+
+.timer input:focus {
+    outline: none;
+}
+
+.controls {
+    position: absolute;
+    top: -21em;
+    left: -22em;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
